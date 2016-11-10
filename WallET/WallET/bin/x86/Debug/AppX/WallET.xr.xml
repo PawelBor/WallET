@@ -34,11 +34,13 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="Name" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="PlaceholderText" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Name" />
@@ -46,13 +48,16 @@
       <RootProperty Name="Background" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Foreground" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Name" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="PlaceholderText" />
     </RootType>
     <RootType FullName="WallET.MainPage" />
+    <RootType FullName="WallET.Views.MenuPage" />
   </Roots.RootTypes>
 </Roots>

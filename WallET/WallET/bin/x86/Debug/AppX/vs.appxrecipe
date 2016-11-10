@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-10T16:50:17.403</Modified>
+      <Modified>2016-11-10T17:44:07.925</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\WallET.exe">
       <PackagePath>entrypoint\WallET.exe</PackagePath>
-      <Modified>2016-11-10T16:49:54.794</Modified>
+      <Modified>2016-11-10T17:44:07.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -498,7 +498,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\WallET.xr.xml">
       <PackagePath>WallET.xr.xml</PackagePath>
-      <Modified>2016-11-10T16:49:54.105</Modified>
+      <Modified>2016-11-10T17:36:32.783</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -506,11 +506,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-11-10T16:50:09.105</Modified>
+      <Modified>2016-11-10T17:36:37.241</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\Core\WallET.exe">
       <PackagePath>WallET.exe</PackagePath>
-      <Modified>2016-11-10T16:50:17.380</Modified>
+      <Modified>2016-11-10T17:44:07.918</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

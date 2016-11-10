@@ -7,6 +7,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 using WallET.Model;
+using WallET.Views;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Popups;
@@ -30,12 +31,32 @@ namespace WallET
 
         //Storage for registration
         IsolatedStorageFile ISOFile = IsolatedStorageFile.GetUserStoreForApplication();
-        List<UserData> UserListDataObject = new List<UserData>();
+        List<PersonalData> PersonalListDataObject = new List<PersonalData>();
 
         public MainPage()
         {
             this.InitializeComponent();
+            //Run MainPage_Loaded when MainPage is accessed by the user.
+            this.MainPage_Loaded();
         }
+
+        //Doing this because in order to compare data entered with existing data (username/password)
+        //Load the file RegDB when MainPage is loaded. (For existing account purpose)
+        public void MainPage_Loaded()
+        {
+            //determines whether specified path refers to existing file. It's an Isolated Sotrage File -> AppData
+            if (ISOFile.FileExists("RegDB"))
+            {
+                //ISFS Allows for IsolatedFile Exposure. Opens RegDB.
+                using (IsolatedStorageFileStream fileStream = ISOFile.OpenFile("RegDB", FileMode.Open))
+                {
+                    //Serializes and deserializes an instance of a type into an XML stream or document using a supplied data contract
+                    DataContractSerializer serializer = new DataContractSerializer(typeof(List<PersonalData>));
+                    PersonalListDataObject = (List<PersonalData>)serializer.ReadObject(fileStream);
+                }
+            }
+        }//MainPage Load END
+
 
         //Registration Submit click event
         public async void Submit_Click(object sender, RoutedEventArgs e)
@@ -57,13 +78,13 @@ namespace WallET
             //After validation success ,store user detials in isolated storage   
             else if (TxtUserName.Text != "" && TxtPwd.Password != "")
             {
-                UserData UserDataObject = new UserData();
-                UserDataObject.UserName = TxtUserName.Text;
-                UserDataObject.Password = TxtPwd.Password;
+                PersonalData PersonalDataObject = new PersonalData();
+                PersonalDataObject.UserName = TxtUserName.Text;
+                PersonalDataObject.Password = TxtPwd.Password;
                 int Choice = 0;
-                foreach (var UserLogin in UserListDataObject)
+                foreach (var UserLogin in PersonalListDataObject)
                 {
-                    if (UserDataObject.UserName == UserLogin.UserName)
+                    if (PersonalDataObject.UserName == UserLogin.UserName)
                     {
                         Choice = 1;
                     }
@@ -72,16 +93,16 @@ namespace WallET
                 //Checking existing user names in Isolated Storage DB   
                 if (Choice == 0)
                 {
-                    UserListDataObject.Add(UserDataObject);
+                    PersonalListDataObject.Add(PersonalDataObject);
                     //If file RegDB exists then delete it.
                     if (ISOFile.FileExists("RegDB"))
                     {
                         ISOFile.DeleteFile("RegDB");
-                    }//Creating RegDB file (incl. XML serialization/deserialization using UserData Model)
+                    }//Creating RegDB file (incl. XML serialization/deserialization using PersonalData Model)
                     using (IsolatedStorageFileStream fileStream = ISOFile.OpenFile("RegDB", FileMode.Create))
                     {
-                        DataContractSerializer serializer = new DataContractSerializer(typeof(List<UserData>));
-                        serializer.WriteObject(fileStream, UserListDataObject);
+                        DataContractSerializer serializer = new DataContractSerializer(typeof(List<PersonalData>));
+                        serializer.WriteObject(fileStream, PersonalListDataObject);
                     }
                     //Success Notification for registration
                     MessageDialog regSuccDialog = new MessageDialog("Successful Registration.");
@@ -95,7 +116,57 @@ namespace WallET
                 }
             }
 
-        }//submit registration click
+        }//END submit registration click
+
+
+
+        public async void Login_Click(object sender, RoutedEventArgs e)
+        {
+            //If Username / password txtBox is empty throw "logEnterDetailsDialog" Message Dialog.
+            if (UserName.Text != "" && PassWord.Password != "")
+            {
+                int Choice = 0;
+                //for each UserLogin in ObjUserDataList
+                foreach (var UserLogin in PersonalListDataObject)
+                {
+                    //if User Input is same as UserLogin data in PersonalListDataObject set Choice to 1...
+                    if (UserName.Text == UserLogin.UserName && PassWord.Password == UserLogin.Password)
+                    {
+                        Choice = 1;
+
+                        //If Isolated FIle "TempLoginPersonalData" exists Delete it.(way of overwriting a file)
+                        if (ISOFile.FileExists("TempLoginPersonalData"))
+                        {
+                            ISOFile.DeleteFile("TempLoginPersonalData");
+                        }
+                        // Create "TempLoginPersonalData"
+                        using (IsolatedStorageFileStream fileStream = ISOFile.OpenFile("TempLoginPersonalData", FileMode.Create))
+                        {
+                            ////Serializes and deserializes an instance of a type into an XML stream or document using a supplied data contract
+                            DataContractSerializer serializer = new DataContractSerializer(typeof(PersonalData));
+
+                            serializer.WriteObject(fileStream, UserLogin);
+
+                        }
+                        //If Username + Password is correct navigate to MenuPage
+                        Frame.Navigate(typeof(MenuPage));
+                    }
+                }
+                //If Choice is set to 0 throw Message Dialog "logInvalidDialog"
+                if (Choice == 0)
+                {
+                    MessageDialog logInvalidDialog = new MessageDialog("Invalid UserID/Password");
+                    await logInvalidDialog.ShowAsync();
+                }
+            }
+            else
+            {
+                //same as
+                MessageDialog logEnterDetailsDialog = new MessageDialog("Enter UserID/Password");
+                await logEnterDetailsDialog.ShowAsync();
+            }
+
+        }
 
     }
 }

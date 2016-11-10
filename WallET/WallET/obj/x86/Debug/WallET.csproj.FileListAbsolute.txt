@@ -194,3 +194,8 @@ C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\qualifiers.txt
 C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\Views\MenuPage.xbf
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\Views\MenuPage.g.i.cs
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\Views\MenuPage.g.cs
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\Views\MenuPage.xaml
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\Views\MenuPage.xbf
