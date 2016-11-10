@@ -8,6 +8,43 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
+        <Pivot x:Name="rootPivot" Title="Swipe Login/Registration">
+            <!--
+            <PivotItem Header="LOGIN">
+                
+                <StackPanel Grid.Row="0" Margin="12,17,0,28">
+                    
+                    <TextBlock Text="Username" Foreground="Black" FontSize="30"/>
+                    <TextBox  BorderBrush="LightGray" PlaceholderText="Username"  Name="UserName" x:FieldModifier="public"/>
+                   
+                    <TextBlock  Foreground="Black" Text="Password" Margin="0,12,0,0" FontSize="30"/>
+                    <PasswordBox BorderBrush="LightGray" PlaceholderText="Password" Name="PassWord" Margin="0,0,0,10"  />
+                    
+                    <Button Content="Login" HorizontalAlignment="Stretch" Background="CadetBlue" Foreground="White" Name="Login" Click="Login_Click" />
+                </StackPanel>
+            </PivotItem>
+            -->
+
+            <PivotItem Header="REGISTER">
+                <StackPanel  Margin="12,17,0,28">
+                    <TextBlock Text="Registration Form:"></TextBlock>
+                    <StackPanel>
+                    <!--Username-->
+                    <TextBlock Text="UserName :" Grid.Row="0" Foreground="Black"   Margin="0,15,0,0"/>
+                    <TextBox Name="TxtUserName"  BorderBrush="LightGray" Grid.Row="0" Margin="100,0,0,0"/>
+                    </StackPanel>
+                    <!--Password-->
+                    <TextBlock Text="Password: "  Grid.Row="0" Margin="0,25,0,0" Foreground="Black" />
+                    <PasswordBox Name="TxtPwd" BorderBrush="LightGray" Grid.Row="0" Margin="100,0,0,12" />
+                    <!--Submit Button-->
+                    <Button BorderBrush="Transparent"  Background="CadetBlue" HorizontalAlignment="Stretch" Content="Submit" Foreground="White"  Name="BtnSubmit" Click="Submit_Click" Grid.Row="7"/>
+                </StackPanel>
+            </PivotItem>
+        </Pivot>
     </Grid>
 </Page>
