@@ -200,3 +200,4 @@ C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\qualifiers.txt
 C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\WallET.csprojResolveAssemblyReference.cache
