@@ -19,12 +19,12 @@
 
         <StackPanel Background="#E1E7EB" Grid.Row="0" Grid.Column="0">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="User Balance: " HorizontalAlignment="Left" VerticalAlignment="Center" ></TextBlock>
+                <TextBlock x:Uid="userBalanceTB" Text="" HorizontalAlignment="Left" VerticalAlignment="Center" ></TextBlock>
                 <TextBlock x:ConnectionId='11' x:Name="balanceBox" Margin="25,0,0,0" HorizontalAlignment="Center"  Text="Balance" FontSize="35" VerticalAlignment="Center"  Foreground="Green"></TextBlock>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Current Balance: " VerticalAlignment="Center" ></TextBlock>
+                <TextBlock x:Uid="currentBalanceTB" Text="" VerticalAlignment="Center" ></TextBlock>
                 <TextBlock x:ConnectionId='10' x:Name="curentBalanceBox" Margin="10,0,0,0" Text="CurBalance" FontSize="25"  HorizontalAlignment="Center" Foreground="Red"></TextBlock>
             </StackPanel>
         </StackPanel>
@@ -36,13 +36,13 @@
                     <StackPanel HorizontalAlignment="Stretch" Width="Auto" Height="Auto" Padding="5">
                    
                         <StackPanel Grid.Column="1" Grid.Row="1">
-                            <TextBlock Text="Product" FontSize="20"></TextBlock>
+                            <TextBlock x:Uid="productBlock" Text="" FontSize="20"></TextBlock>
                             <TextBox x:ConnectionId='4' x:Name="productTextBox" Padding="10" Margin="0, 5, 0, 0" />
 
-                            <TextBlock Text="Quantity" FontSize="20"></TextBlock>
-
+                            <TextBlock x:Uid="quantityBlock" Text="" FontSize="20"></TextBlock>
                             <TextBox x:ConnectionId='5' x:Name="quantityTextBox" Padding="10" Margin="0, 5, 0, 0" />
-                            <TextBlock Text="Price" FontSize="20"></TextBlock>
+
+                            <TextBlock x:Uid="priceBlock" Text="" FontSize="20"></TextBlock>
                             <TextBox x:ConnectionId='6' x:Name="priceTextBox" Padding="10" Margin="0, 5, 0, 0" />
 
                             <ListBox x:ConnectionId='7' x:Name="fetchData" HorizontalAlignment="Center" VerticalAlignment="Bottom"
