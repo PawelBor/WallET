@@ -114,6 +114,8 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <PRIResource Include="Strings\En-GB\Resources.resw" />
+    <PRIResource Include="Strings\pl-PL\Resources.resw" />
+    <PRIResource Include="Strings\es-ES\Resources.resw" />
     <None Include="WallET_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

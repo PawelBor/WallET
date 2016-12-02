@@ -31,7 +31,7 @@
         
         <Pivot Grid.Row="1" x:Name="rootPivot" Background="#C1CDCD" Title="WallET">
             
-            <PivotItem Header="PRODUCTS">
+            <PivotItem x:Uid="productsPI" Header="">
                 <ScrollViewer Grid.Row="1" Grid.Column="0" >
                     <StackPanel HorizontalAlignment="Stretch" Width="Auto" Height="Auto" Padding="5">
                    
@@ -60,11 +60,11 @@
 
             </PivotItem>
             
-            <PivotItem Header="SET BALANCE">
+            <PivotItem x:Uid="setBalancePI" Header="">
                 <StackPanel>
                     <TextBox PlaceholderText="Enter Your Balance..." x:Name="txtBalanceInput" FontSize="30">
                     </TextBox>
-                    <Button Content="Set Balance" Name="btnSetBalance" Click="btnSetBalance_Click"></Button>
+                    <Button x:Uid="setBalanceBTN" Content="" Name="btnSetBalance" Click="btnSetBalance_Click"></Button>
                 </StackPanel>
             </PivotItem>
             

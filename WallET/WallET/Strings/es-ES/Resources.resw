@@ -121,54 +121,54 @@
     <value>Login</value>
   </data>
   <data name="btnRegister.Content" xml:space="preserve">
-    <value>Submit</value>
+    <value>Enviar</value>
   </data>
   <data name="currentBalanceTB.Text" xml:space="preserve">
-    <value>Current Balance: </value>
+    <value>Saldo Actual:</value>
   </data>
   <data name="loginPassword.Text" xml:space="preserve">
-    <value>Password</value>
+    <value>Contraseña</value>
   </data>
   <data name="loginPasswordTB.PlaceholderText" xml:space="preserve">
-    <value>Password</value>
+    <value>Contraseña</value>
   </data>
   <data name="loginUsername.Text" xml:space="preserve">
-    <value>Username</value>
+    <value>Nombre de usuario</value>
   </data>
   <data name="loginUsernameTB.PlaceholderText" xml:space="preserve">
-    <value>Username</value>
+    <value>Nombre de usuario</value>
   </data>
   <data name="priceBlock.Text" xml:space="preserve">
-    <value>Price</value>
+    <value>Precio</value>
   </data>
   <data name="productBlock.Text" xml:space="preserve">
-    <value>Product</value>
+    <value>Producto</value>
   </data>
   <data name="productsPI.Header" xml:space="preserve">
-    <value>PRODUCTS</value>
+    <value>PRODUCTOS</value>
   </data>
   <data name="quantityBlock.Text" xml:space="preserve">
-    <value>Quantity</value>
+    <value>Cantidad</value>
   </data>
   <data name="regFormTB.Text" xml:space="preserve">
-    <value>Registration Form:</value>
+    <value>Formulario de Inscripción:</value>
   </data>
   <data name="registerName.Text" xml:space="preserve">
-    <value>UserName :</value>
+    <value>Nombre de Usuario: </value>
   </data>
   <data name="registerPassword.Text" xml:space="preserve">
     <value>Password :</value>
   </data>
   <data name="rootPivot.Title" xml:space="preserve">
-    <value>Swipe Login/Registration</value>
+    <value>Swipe Login/Registro</value>
   </data>
   <data name="setBalanceBTN.Content" xml:space="preserve">
-    <value>Submit</value>
+    <value>Enviar</value>
   </data>
   <data name="setBalancePI.Header" xml:space="preserve">
-    <value>SET BALANCE</value>
+    <value>EQUILIBRIO</value>
   </data>
   <data name="userBalanceTB.Text" xml:space="preserve">
-    <value>User Balance: </value>
+    <value>Equilibrio del Usuario:</value>
   </data>
 </root>

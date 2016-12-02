@@ -22,6 +22,7 @@
   <Resources>
     <Resource Language="EN-US" />
     <Resource Language="EN-GB" />
+    <Resource Language="PL-PL" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="WallET.exe" EntryPoint="WallET.App">

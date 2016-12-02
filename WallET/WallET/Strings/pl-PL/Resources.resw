@@ -121,54 +121,54 @@
     <value>Login</value>
   </data>
   <data name="btnRegister.Content" xml:space="preserve">
-    <value>Submit</value>
+    <value>Zatwierdź</value>
   </data>
   <data name="currentBalanceTB.Text" xml:space="preserve">
-    <value>Current Balance: </value>
+    <value>Atualne Saldo:</value>
   </data>
   <data name="loginPassword.Text" xml:space="preserve">
-    <value>Password</value>
+    <value>Hasło</value>
   </data>
   <data name="loginPasswordTB.PlaceholderText" xml:space="preserve">
-    <value>Password</value>
+    <value>Hasło</value>
   </data>
   <data name="loginUsername.Text" xml:space="preserve">
-    <value>Username</value>
+    <value>Nazwa Użytkownika</value>
   </data>
   <data name="loginUsernameTB.PlaceholderText" xml:space="preserve">
-    <value>Username</value>
+    <value>Nazwa Użytkownika</value>
   </data>
   <data name="priceBlock.Text" xml:space="preserve">
-    <value>Price</value>
+    <value>Cena</value>
   </data>
   <data name="productBlock.Text" xml:space="preserve">
-    <value>Product</value>
+    <value>Produkt</value>
   </data>
   <data name="productsPI.Header" xml:space="preserve">
-    <value>PRODUCTS</value>
+    <value>Produkty</value>
   </data>
   <data name="quantityBlock.Text" xml:space="preserve">
-    <value>Quantity</value>
+    <value>ilość</value>
   </data>
   <data name="regFormTB.Text" xml:space="preserve">
-    <value>Registration Form:</value>
+    <value>Formularz rejestracyjny:</value>
   </data>
   <data name="registerName.Text" xml:space="preserve">
-    <value>UserName :</value>
+    <value>Nazwa Użytkownika:</value>
   </data>
   <data name="registerPassword.Text" xml:space="preserve">
-    <value>Password :</value>
+    <value>Nazwa Użytkownika:</value>
   </data>
   <data name="rootPivot.Title" xml:space="preserve">
-    <value>Swipe Login/Registration</value>
+    <value>Przesun Logowanie / Rejestracja</value>
   </data>
   <data name="setBalanceBTN.Content" xml:space="preserve">
-    <value>Submit</value>
+    <value>Zatwierdz</value>
   </data>
   <data name="setBalancePI.Header" xml:space="preserve">
-    <value>SET BALANCE</value>
+    <value>Ustaw Saldo</value>
   </data>
   <data name="userBalanceTB.Text" xml:space="preserve">
-    <value>User Balance: </value>
+    <value>Bilans użytkownika: </value>
   </data>
 </root>
