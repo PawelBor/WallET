@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="WallET.Views.MapPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WallET.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Maps:MapControl x:ConnectionId='1' x:Name="StoreMap">
+            <Maps:MapItemsControl x:ConnectionId='3' x:Name="MapSrc">
+                <Maps:MapItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button x:ConnectionId='4'  x:Name="mapSrcBtn"  Background="Transparent"                          >
+                            <StackPanel>
+                                <Border Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                                    <TextBlock Text="{Binding Name}"/>
+                                </Border>
+                                <Image Source="{Binding ImageSourceUri}"
+        							Maps:MapControl.Location="{Binding Location}" 
+                                               >
+                                    <Image.Transitions>
+                                        <TransitionCollection>
+                                            <EntranceThemeTransition/>
+                                        </TransitionCollection>
+                                    </Image.Transitions>
+                                </Image>
+                            </StackPanel>
+                        </Button>
+                    </DataTemplate>
+                </Maps:MapItemsControl.ItemTemplate>
+            </Maps:MapItemsControl>
+        </Maps:MapControl>
+        <Button x:ConnectionId='2' x:Name="showStore" Content="Show Shops" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Grid.Row="2"                          />
+    </Grid>
+</Page>
+

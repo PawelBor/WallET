@@ -22,6 +22,8 @@
   <Resources>
     <Resource Language="EN-US" />
     <Resource Language="EN-GB" />
+    <Resource Language="ES-ES" />
+    <Resource Language="LT-LT" />
     <Resource Language="PL-PL" />
   </Resources>
   <Applications>
@@ -35,6 +37,7 @@
   <Capabilities>
     <Capability Name="internetClient" />
     <uap:Capability Name="removableStorage" />
+    <DeviceCapability Name="location" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />

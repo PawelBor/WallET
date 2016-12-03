@@ -149,7 +149,7 @@ namespace WallET
 
                         }
                         //If Username + Password is correct navigate to MenuPage
-                        Frame.Navigate(typeof(MenuPage));
+                        Frame.Navigate(typeof(ChoicePage));
                     }
                 }
                 //If Choice is set to 0 throw Message Dialog "logInvalidDialog"

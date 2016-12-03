@@ -201,3 +201,13 @@ C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\qualifiers.txt.
 C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\WallET.csprojResolveAssemblyReference.cache
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\Views\ChoicePage.g.i.cs
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\Views\ChoicePage.g.cs
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\Views\ChoicePage.xaml
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\Views\ChoicePage.xbf
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\Views\ChoicePage.xbf
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\Views\MapPage.xbf
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\Views\MapPage.g.i.cs
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\Views\MapPage.g.cs
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\Views\MapPage.xaml
+C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\Views\MapPage.xbf

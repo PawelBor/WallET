@@ -8,6 +8,7 @@ using WallET.Model;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
+using Windows.UI.Core;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -48,6 +49,10 @@ namespace WallET.Views
 
             this.checkFileContent();
         }
+
+
+
+
 
         private void SetBalance()
         {

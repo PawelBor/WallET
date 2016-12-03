@@ -354,8 +354,17 @@
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Images\mapIcon.png">
+      <PackagePath>Images\mapIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Images\mappin.png">
+      <PackagePath>Images\mappin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Images\receiptImage.png">
+      <PackagePath>Images\receiptImage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Images\windows.png">
+      <PackagePath>Images\windows.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -383,6 +392,9 @@
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\WallET.xr.xml">
       <PackagePath>WallET.xr.xml</PackagePath>

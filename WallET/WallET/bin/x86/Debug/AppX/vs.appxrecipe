@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>0b1a97a9-a246-4e7d-bd9b-a3f97adc5235</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>E25CDA6A80D67BC0038F1D44A497F47D8F3641BEAA88027DE868BD6AC471AC4A</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>B40EF668FA48763C25F407F796BFEF0C3CE843D48048CA0FEA73E5E54C074BE2</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>0b1a97a9-a246-4e7d-bd9b-a3f97adc5235_1.0.0.0_x86__re4qsfgg6kk46</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>0b1a97a9-a246-4e7d-bd9b-a3f97adc5235_re4qsfgg6kk46!App</RegisteredUserModeAppID>
     <RegisteredPackageID>0b1a97a9-a246-4e7d-bd9b-a3f97adc5235</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-02T15:02:37.685</Modified>
+      <Modified>2016-12-03T18:25:34.944</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\WallET.exe">
       <PackagePath>entrypoint\WallET.exe</PackagePath>
-      <Modified>2016-12-02T15:02:32.439</Modified>
+      <Modified>2016-12-03T18:25:33.046</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -474,9 +474,21 @@
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2016-11-09T19:14:57.989</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-11-09T19:14:44.214</Modified>
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Images\mapIcon.png">
+      <PackagePath>Images\mapIcon.png</PackagePath>
+      <Modified>2016-12-03T17:31:23.168</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Images\mappin.png">
+      <PackagePath>Images\mappin.png</PackagePath>
+      <Modified>2016-12-03T18:19:46.006</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Images\receiptImage.png">
+      <PackagePath>Images\receiptImage.png</PackagePath>
+      <Modified>2016-12-03T17:31:20.046</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Images\windows.png">
+      <PackagePath>Images\windows.png</PackagePath>
+      <Modified>2016-12-03T16:41:15.517</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -512,9 +524,13 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-07-23T01:25:18.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2016-11-09T19:14:44.214</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\WallET.xr.xml">
       <PackagePath>WallET.xr.xml</PackagePath>
-      <Modified>2016-11-13T20:45:42.754</Modified>
+      <Modified>2016-12-03T18:14:16.597</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -522,11 +538,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-12-02T15:02:36.747</Modified>
+      <Modified>2016-12-03T18:25:34.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\Core\WallET.exe">
       <PackagePath>WallET.exe</PackagePath>
-      <Modified>2016-12-02T15:02:37.619</Modified>
+      <Modified>2016-12-03T18:25:34.931</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
