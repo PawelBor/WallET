@@ -40,11 +40,12 @@ namespace WallET.Views
             //base.OnNavigatedTo(e);
             StoreMap.MapServiceToken = "LjAtiC5aNFPpcxSyy29M~HCQIpzUD7UFVDw77JI1Xmg~Ai8yD06vGSyqxPxKwhV2yLuG4eanMbZEphNpVsJwSt-r7cWmt3f46xM-ka1PVNsC";
             var locator = new Geolocator();
+            //sets accuracy to 100 (Best accuracy)
             locator.DesiredAccuracyInMeters = 100;
-
+            //current location set in "position" variable
             var position = await locator.GetGeopositionAsync();
             await StoreMap.TrySetViewAsync(position.Coordinate.Point, 18D);
-
+            //if position is not empty get lat, long and assign it to icon.Location and add it to the map
             if (position != null)
             {
                 Geopoint myPos = new Geopoint(new BasicGeoposition()
@@ -58,12 +59,13 @@ namespace WallET.Views
                 icon.Title = "Home";
                 StoreMap.MapElements.Add(icon);
             }
-
+            //get all the shops added in ShopManager VM
             storeManager = new ShopManager();
 
 
         }
 
+        //gets all shops from GetShop List from SHopManager and displays on map
         private void showStore_Tapped(object sender, TappedRoutedEventArgs e)
         {
             MapSrc.ItemsSource = storeManager.GetShop();
