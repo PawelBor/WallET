@@ -7,42 +7,43 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#C5C3C6">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Pivot x:ConnectionId='1' x:Uid="rootPivot" x:Name="rootPivot" Title="">
-            
-            <PivotItem Header="LOGIN">
+
+            <PivotItem Header="LOGIN" FontFamily="Times New Roman">
                 
                 <StackPanel Grid.Row="0" Margin="12,17,0,28">
-                    
-                    <TextBlock x:Uid="loginUsername" Text="" Foreground="Black" FontSize="30"/>
-                    <TextBox x:ConnectionId='5' x:Uid="loginUsernameTB" BorderBrush="LightGray" PlaceholderText=""  Name="UserName" x:FieldModifier="public"/>
 
-                    <TextBlock x:Uid="loginPassword" Foreground="Black" Text="" Margin="0,12,0,0" FontSize="30"/>
-                    <PasswordBox x:ConnectionId='6' x:Uid="loginPasswordTB" BorderBrush="LightGray" PlaceholderText="" Name="PassWord" Margin="0,0,0,10"  />
-                    
-                    <Button x:ConnectionId='7' x:Uid="btnLogin" Content="" HorizontalAlignment="Stretch" Background="CadetBlue" Foreground="White" Name="Login"                     />
+                    <TextBlock x:Uid="loginUsername" FontFamily="Times New Roman" Text="" Foreground="Black" FontSize="30"/>
+                    <TextBox x:ConnectionId='5' x:Uid="loginUsernameTB" FontFamily="Times New Roman" BorderBrush="LightGray" PlaceholderText=""  Name="UserName" x:FieldModifier="public"/>
+
+                    <TextBlock x:Uid="loginPassword" FontFamily="Times New Roman" Foreground="Black" Text="" Margin="0,12,0,0" FontSize="30"/>
+                    <PasswordBox x:ConnectionId='6' x:Uid="loginPasswordTB" FontFamily="Times New Roman" BorderBrush="LightGray" PlaceholderText="" Name="PassWord" Margin="0,0,0,10"  />
+
+                    <Button x:ConnectionId='7' x:Uid="btnLogin" Content="" HorizontalAlignment="Stretch" Background="Black" Foreground="#D9D7D8" Name="Login"                     />
                 </StackPanel>
             </PivotItem>
-            
 
-            <PivotItem Header="REGISTER">
+
+            <PivotItem Header="REGISTER" FontFamily="Times New Roman">
                 <StackPanel  Margin="12,17,0,28">
-                    <TextBlock x:Uid="regFormTB" Text=""></TextBlock>
+                    <TextBlock x:Uid="regFormTB" FontWeight="SemiBold" FontFamily="Times New Roman" Text=""></TextBlock>
                     <StackPanel>
                     <!--Username-->
-                    <TextBlock x:Uid="registerName" Text="" Grid.Row="0" Foreground="Black"   Margin="0,15,0,0"/>
-                    <TextBox x:ConnectionId='4'  Name="TxtUserName"  BorderBrush="LightGray" Grid.Row="0" Margin="100,0,0,0"/>
+                        <TextBlock x:Uid="registerName" FontFamily="Times New Roman" Text="" Grid.Row="0" Foreground="Black"   Margin="0,15,0,0"/>
+                        <TextBox x:ConnectionId='4'  Name="TxtUserName" FontFamily="Times New Roman"  BorderBrush="LightGray" Grid.Row="0" Margin="0,0,0,0"/>
                     </StackPanel>
                     <!--Password-->
-                    <TextBlock x:Uid="registerPassword" Text=""  Grid.Row="0" Margin="0,25,0,0" Foreground="Black" />
-                    <PasswordBox x:ConnectionId='2' Name="TxtPwd" BorderBrush="LightGray" Grid.Row="0" Margin="100,0,0,12" />
+                    <TextBlock x:Uid="registerPassword" Text="" FontFamily="Times New Roman"  Grid.Row="0" Margin="0,25,0,0" Foreground="Black" />
+                    <PasswordBox x:ConnectionId='2' Name="TxtPwd" FontFamily="Times New Roman" BorderBrush="LightGray" Grid.Row="0" Margin="0,0,0,12" />
                     <!--Submit Button-->
-                    <Button x:ConnectionId='3' x:Uid="btnRegister" BorderBrush="Transparent"  Background="CadetBlue" HorizontalAlignment="Stretch" Content="" Foreground="White"  Name="BtnSubmit"                      Grid.Row="7"/>
+                    <Button x:ConnectionId='3' x:Uid="btnRegister" FontFamily="Times New Roman" BorderBrush="Transparent" Background="Black" Foreground="#D9D7D8" HorizontalAlignment="Stretch" Content="" Name="BtnSubmit"                      Grid.Row="7"/>
                 </StackPanel>
             </PivotItem>
         </Pivot>

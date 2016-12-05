@@ -15,11 +15,11 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        <Maps:MapControl x:Name="StoreMap">
-            <Maps:MapItemsControl x:Name="MapSrc">
+        <Maps:MapControl x:ConnectionId='1' x:Name="StoreMap">
+            <Maps:MapItemsControl x:ConnectionId='3' x:Name="MapSrc">
                 <Maps:MapItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button  x:Name="mapSrcBtn"  Background="Transparent" Tapped="mapSrcBtn_Tapped">
+                        <Button x:ConnectionId='4'  x:Name="mapSrcBtn"  Background="Transparent"                          >
                             <StackPanel>
                                 <Border Background="WhiteSmoke">
                                     <TextBlock Text="{Binding Name}"/>
@@ -39,6 +39,7 @@
                 </Maps:MapItemsControl.ItemTemplate>
             </Maps:MapItemsControl>
         </Maps:MapControl>
-        <Button x:Name="showStore" Content="Show Shops" HorizontalAlignment="Stretch" Margin="0,1,0,0" VerticalAlignment="Stretch" Grid.Row="2" Tapped="showStore_Tapped"/>
+        <Button x:ConnectionId='2' x:Name="showStore" Content="Show Shops" HorizontalAlignment="Stretch" Margin="0,1,0,0" VerticalAlignment="Stretch" Grid.Row="2"                          />
     </Grid>
 </Page>
+

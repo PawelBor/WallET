@@ -140,7 +140,7 @@ namespace WallET.WallET_XamlTypeInfo
             _typeNameTable[4] = "System.Collections.Generic.IList`1<Windows.UI.Xaml.DependencyObject>";
             _typeNameTable[5] = "Windows.UI.Xaml.DependencyObject";
             _typeNameTable[6] = "WallET.Views.MapPage";
-            _typeNameTable[7] = "WallET.Views.WalletPage";
+            _typeNameTable[7] = "WallET.Views.MenuPage";
             _typeNameTable[8] = "WallET.Views.ReceiptPage";
 
             _typeTable = new global::System.Type[9];
@@ -190,7 +190,7 @@ namespace WallET.WallET_XamlTypeInfo
         private object Activate_0_MainPage() { return new global::WallET.MainPage(); }
         private object Activate_3_ChoicePage() { return new global::WallET.Views.ChoicePage(); }
         private object Activate_6_MapPage() { return new global::WallET.Views.MapPage(); }
-        private object Activate_7_WalletPage() { return new global::WallET.Views.WalletPage(); }
+        private object Activate_7_MenuPage() { return new global::WallET.Views.WalletPage(); }
         private object Activate_8_ReceiptPage() { return new global::WallET.Views.ReceiptPage(); }
         private void VectorAdd_4_IList(object instance, object item)
         {
@@ -248,9 +248,9 @@ namespace WallET.WallET_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 7:   //  WallET.Views.WalletPage
+            case 7:   //  WallET.Views.MenuPage
                 userType = new global::WallET.WallET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_WalletPage;
+                userType.Activator = Activate_7_MenuPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

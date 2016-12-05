@@ -25,7 +25,7 @@ namespace WallET.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MenuPage : Page
+    public sealed partial class WalletPage : Page
     {
 
 
@@ -37,7 +37,7 @@ namespace WallET.Views
         public double currBalance;
         double totalCost = 0;
 
-        public MenuPage()
+        public WalletPage()
         {
             //path for Database + Creating Table
             this.InitializeComponent();
@@ -331,6 +331,69 @@ namespace WallET.Views
             conn.Close();
         }
 
+        private async void SaveReceipt_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            StorageFolder receiptFolder = ApplicationData.Current.LocalFolder;
 
+            StorageFile receiptFile;
+            string fileText = "";
+
+            try
+            {
+                receiptFile = await receiptFolder.GetFileAsync("receipt.txt");
+                fileText = await Windows.Storage.FileIO.ReadTextAsync(receiptFile);
+            }
+            catch (Exception E)
+            {
+                string message = E.Message;
+                receiptFile = await receiptFolder.CreateFileAsync("receipt.txt");
+            }
+
+            try
+            {
+                dbConnection();
+                List<string> products = new List<string>();
+                var listProducts = conn.Table<Product>();
+                string result = string.Empty;
+                //double totalCost = 0;
+
+                DateTime thisDay = DateTime.Today;
+                string TimeStamp = thisDay.ToString();
+
+                totalCost = 0;
+                int count = 0;
+
+                foreach (var product in listProducts)
+                {
+                    result = string.Format("{0} " + Environment.NewLine + " Qty: {1}     Price: €{2}", product.productName, product.productQTY, product.productPrice);
+                    products.Add(result);
+                    totalCost += Convert.ToDouble(product.productPrice);
+                    if (count == 0)
+                    {
+                        await Windows.Storage.FileIO.WriteTextAsync(receiptFile, fileText += System.Environment.NewLine + System.Environment.NewLine + TimeStamp + System.Environment.NewLine + result);
+                        count++;
+                    }else
+                    {
+                        await Windows.Storage.FileIO.WriteTextAsync(receiptFile, fileText += System.Environment.NewLine + result);
+                    }
+                }
+                fetchData.DataContext = products;
+                listBoxTotalItemCount.Text = ("Product Count: " + Convert.ToString(products.Count));
+                listBoxTotalCost.Text = ("Total Cost: € " + totalCost);
+                closeDBconnection();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            MessageDialog clearDialog = new MessageDialog("Receipt Saved");
+            await clearDialog.ShowAsync();
+        }
+
+        private void gotoRec_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ReceiptPage));
+        }
     }
 }
