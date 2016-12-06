@@ -39,7 +39,7 @@
                 </Maps:MapItemsControl.ItemTemplate>
             </Maps:MapItemsControl>
         </Maps:MapControl>
-        <Button x:ConnectionId='2' x:Name="showStore" Content="Show Shops" HorizontalAlignment="Stretch" Margin="0,1,0,0" VerticalAlignment="Stretch" Grid.Row="2"                          />
+        <Button x:ConnectionId='2' x:Name="showStore" Content="Show Shops" Background="Black" Foreground="WhiteSmoke" FontSize="25" HorizontalAlignment="Stretch" Margin="0,1,0,0" VerticalAlignment="Stretch" Grid.Row="2"                          />
     </Grid>
 </Page>
 

@@ -53,7 +53,7 @@
                            Height="Auto" FontFamily="Times New Roman" FontStyle="Italic" Foreground="Red" />
                             <TextBlock x:ConnectionId='9' x:Name="listBoxTotalItemCount" HorizontalAlignment="Left" Width="Auto"
                            Height="Auto" FontFamily="Times New Roman" FontStyle="Italic" Foreground="Blue" />
-                            <Button x:ConnectionId='10' x:Name="gotoRec"  FontFamily="Times New Roman" Content="Show Receipts" HorizontalAlignment="Stretch" Background="Black" Foreground="WhiteSmoke"                        ></Button>
+                            <Button x:ConnectionId='10' x:Uid="gotoRecUID" x:Name="gotoRec"  FontFamily="Times New Roman" Content="" HorizontalAlignment="Stretch" Background="Black" Foreground="WhiteSmoke"                        ></Button>
                         </StackPanel>
                    
                 </StackPanel>

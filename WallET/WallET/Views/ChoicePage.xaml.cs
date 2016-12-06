@@ -65,7 +65,7 @@ namespace WallET.Views
             }
         }
 
-        private void imgSavedWeather_Tapped(object sender, TappedRoutedEventArgs e)
+        private void imgSavedWallet_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Frame.Navigate(typeof(WalletPage));
         }

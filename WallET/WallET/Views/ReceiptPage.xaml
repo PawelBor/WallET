@@ -11,10 +11,10 @@
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <StackPanel BorderBrush="Black" BorderThickness="3" >
                 <StackPanel Background="Black">
-                    <TextBlock x:Name="savedReceiptDisplay" x:Uid="savedReceipt" FontSize="25" FontFamily="Times New Roman" FontWeight="Bold" Foreground="WhiteSmoke" Text="Receipt List" HorizontalAlignment="Center" Margin="0,15,0,0"/>
+                    <TextBlock x:Uid="savedReceiptTitleUID" x:Name="savedReceiptDisplay" FontSize="25" FontFamily="Times New Roman" FontWeight="Bold" Foreground="WhiteSmoke" Text="" HorizontalAlignment="Center" Margin="0,15,0,0"/>
                 </StackPanel>
                 <TextBlock x:Name="receiptDisplay" HorizontalAlignment="Center" Margin="30,20,30,20"  />
-                <Button x:Name="btnClear" Foreground="White" Background="Black" x:Uid="btnClearContent" Content="Clear" FontFamily="Times New Roman" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Stretch" Tapped="btnClear_Tapped" />
+                <Button x:Uid="btnClearReceiptUID" x:Name="btnClear" Foreground="White" Background="Black" Content="" FontFamily="Times New Roman" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Stretch" Tapped="btnClear_Tapped" />
             </StackPanel>
         </ScrollViewer>
 

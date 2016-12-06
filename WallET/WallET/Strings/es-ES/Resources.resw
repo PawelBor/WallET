@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnClearReceiptUID.Content" xml:space="preserve">
+    <value>CLARO</value>
+  </data>
   <data name="btnLogin.Content" xml:space="preserve">
     <value>Login</value>
   </data>
@@ -125,6 +128,15 @@
   </data>
   <data name="currentBalanceTB.Text" xml:space="preserve">
     <value>Saldo Actual:</value>
+  </data>
+  <data name="gotoRecUID.Content" xml:space="preserve">
+    <value>Mostrar recibos</value>
+  </data>
+  <data name="imgSavedWalletUID.Content" xml:space="preserve">
+    <value>TU CARTERA</value>
+  </data>
+  <data name="imgShopsUID.Content" xml:space="preserve">
+    <value>TIENDAS CERCANAS</value>
   </data>
   <data name="loginPassword.Text" xml:space="preserve">
     <value>Contraseña</value>
@@ -161,6 +173,9 @@
   </data>
   <data name="rootPivot.Title" xml:space="preserve">
     <value>Swipe Login/Registro</value>
+  </data>
+  <data name="savedReceiptTitleUID.Text" xml:space="preserve">
+    <value>LISTA DE RECIBO</value>
   </data>
   <data name="setBalanceBTN.Content" xml:space="preserve">
     <value>Enviar</value>

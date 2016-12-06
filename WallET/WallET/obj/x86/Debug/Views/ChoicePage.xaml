@@ -56,12 +56,12 @@
         <Grid x:ConnectionId='4' x:Name="FirstGrid" Grid.Column="0" Grid.Row="0" Background="#B0E2FF">
             <!--<Image x:Name="imgShops" Source="ms-appx:///Images/MapIcon.png"  HorizontalAlignment="Center" 
                VerticalAlignment="Center" Stretch="Uniform" Tapped="imgShops_Tapped"/> -->
-            <Button x:ConnectionId='7' x:Name="imgShops" Content="NEARBY SHOPS" Foreground="White" Background="Black" FontWeight="Bold" FontSize="30" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"                         ></Button>
-        </Grid>
+            <Button x:ConnectionId='7' x:Name="imgShops" x:Uid="imgShopsUID" Content="" Foreground="White" Background="Black" FontWeight="Bold" FontSize="30" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"                         ></Button>
+        </Grid> 
         <Grid x:ConnectionId='5' x:Name="SecondGrid" Grid.Column="1" Grid.Row="0" Background="#A4D3EE">
            <!-- <Image x:Name="imgSavedWeather" Source="ms-appx:///Images/receiptImage.png"  HorizontalAlignment="Center" 
                VerticalAlignment="Center" Stretch="Uniform" Tapped="imgSavedWeather_Tapped" /> -->
-            <Button x:ConnectionId='6' x:Name="imgSavedWeather" Content="YOUR WALLET" Foreground="Black" Background="White" FontWeight="Bold" FontSize="30" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"                                ></Button>
+            <Button x:ConnectionId='6' x:Name="imgSavedWallet" x:Uid="imgSavedWalletUID" Content="" Foreground="Black" Background="White" FontWeight="Bold" FontSize="30" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"                               ></Button>
         </Grid>
     </Grid>
 </Page>

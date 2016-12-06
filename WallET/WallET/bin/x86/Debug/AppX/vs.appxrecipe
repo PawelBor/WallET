@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-05T23:40:01.394</Modified>
+      <Modified>2016-12-06T00:40:41.993</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\WallET.exe">
       <PackagePath>entrypoint\WallET.exe</PackagePath>
-      <Modified>2016-12-05T23:39:59.007</Modified>
+      <Modified>2016-12-06T00:40:40.313</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -480,7 +480,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Images\mappin.png">
       <PackagePath>Images\mappin.png</PackagePath>
-      <Modified>2016-12-03T18:19:46.006</Modified>
+      <Modified>2016-12-06T00:40:31.632</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\Images\receiptImage.png">
       <PackagePath>Images\receiptImage.png</PackagePath>
@@ -538,11 +538,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-12-05T23:40:00.088</Modified>
+      <Modified>2016-12-06T00:40:41.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\WallET\WallET\WallET\bin\x86\Debug\Core\WallET.exe">
       <PackagePath>WallET.exe</PackagePath>
-      <Modified>2016-12-05T23:40:01.374</Modified>
+      <Modified>2016-12-06T00:40:41.974</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
